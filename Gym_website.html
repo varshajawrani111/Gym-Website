@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varsha Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<style>
+    /*CSS reset*/
+    body {
+        margin: 0px;
+        padding: 0px;
+        height: 255px;
+        background: url('img/bg3.jpg');
+        background-size: 1400px;
+        color: white;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        margin: 12px;
+        width: 100px;
+        /*filter: invert(100%); /*filter-->invert- is used to change the color of immage*/
+    }
+
+    .left div {  
+        line-height: 13px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 34px;
+        top: 43px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        /*to remove line from anchor tag*/
+        padding: 34px 23px;
+    }
+
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        border-radius: 6px;
+        color: blanchedalmond;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(244, 56, 67);
+    }
+
+    .container {
+        text-align: center;
+        /* border: 2px solid white; */
+        margin: 80px 58px;
+        padding: 65px;
+        width: 33%;
+        border-radius: 20px;
+        float: right;
+    }
+
+    .form-group input {
+        display: block;
+        text-align: center;
+        width: 355px;
+        padding: 4px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 20px;
+        border-radius: 10px;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .container button{
+        display: block;
+        width: 30%;
+        margin: 20px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!--left box for logo-->
+            <img src="img/logo.jpg" alt="Error loading image">
+            <div>
+                Varsha's Fitness
+            </div>
+        </div>
+
+        <div class="mid">
+            <!--mid box for navbar-->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" class="active1">About us</a></li>
+                <li><a href="#" class="active2">Fitness Calculator</a></li>
+                <li><a href="Contact.html" class="active3">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <!--right box for buttons-->
+            <button class="btn" onclick="location.href='Contact.html'">Call us now</button>
+            <button class="btn">Email us now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Join the best gym of Mumbai Now !!</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your locality">
+            </div>
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your contact number">
+            </div>
+            <div class="form-group">
+                <input type="text"  placeholder="Enter your email id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>
